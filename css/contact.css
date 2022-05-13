@@ -1,46 +1,39 @@
 /* Тренировка */
 
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  min-height: 100vh;
-  background-color: #f9f9fd;
-  display: flex;
-  justify-content: center;
+.button {
+  display: inline-flex;
   align-items: center;
-  padding: 20px;
+  padding: 10px 20px;
+  background-color: teal;
+  color: #fff;
+  border-radius: 3px;
+  text-decoration: none;
+  cursor: pointer;
 }
 
-.post {
-  position: relative;
-  max-width: 600px;
-  padding: 20px;
-  border-radius: 4px;
-  line-height: 1.5;
-  font-family: sans-serif;
-  background-color: #fff;
+.button:hover,
+.button:focus {
+  background-color: palevioletred;
 }
 
-.post:before,
-.post:after {
-  z-index: -1;
-  position: absolute;
-  content: "";
-  bottom: 15px;
-  left: 10px;
-  width: 50%;
-  top: 80%;
-  max-width: 300px;
-  background: #777;
-  box-shadow: 0 15px 10px #777;
-  transform: rotate(-3deg);
-}
+/* .button > .icon {
+  width: 20px;
+  height: 20px;
+  outline: 1px solid red;
+  margin-right: 10px;
+  background-image: url('../images/bcg-img.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+} */
 
-.post:after {
-  transform: rotate(3deg);
-  right: 10px;
-  left: auto;
+.button::after {
+  content: '';
+  margin-left: 10px;
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  background-image: url('../images/bcg-img.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
