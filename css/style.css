@@ -147,12 +147,39 @@ h2 {
   align-items: center;
 }
 
+/* Телефон */
+
 .icon-smartphone {
   display: inline-flex;
   margin-right: 10px;
 }
 
+.icon-smartphone {
+  fill: #757575;
+}
+
+.icon-smartphone:hover {
+  fill: #2196f3;
+}
+
+.svg-smartphone {
+  display: inline-flex;
+  margin-right: 10px;
+}
+
+/* Конверт */
+
 .icon-envelope {
+  display: inline-flex;
+  margin-right: 10px;
+  fill: #757575;
+}
+
+.icon-envelope:hover {
+  fill: #2196f3;
+}
+
+.svg-envelope {
   display: inline-flex;
   margin-right: 10px;
 }
@@ -217,11 +244,9 @@ h2 {
   text-decoration: none;
 }
 
-.container > .logo {
-  display: inline-block;
-  padding-top: 60px;
-  margin-bottom: 20px;
-}
+/* Стилизируем иконки наших клиентов */
+
+
 
 /* Задал контейнеру 1170, как по макету, а не 1200 */
 
@@ -268,7 +293,6 @@ h2 {
 
 .footer-contact {
   display: inline-block;
-  margin-bottom: 60px;
 }
 
 .feature-text,
@@ -319,7 +343,7 @@ address {
 
 .employee-text {
   margin-top: 0;
-  margin-bottom: 0px;
+  margin-bottom: 16px;
 
   font-size: 16px;
   line-height: 1.18;
@@ -367,8 +391,7 @@ address {
   margin-left: 93px;
 }
 
-.site-nav .item + .item,
-.contact-nav .item + .item {
+.site-nav .item + .item {
   margin-left: 50px;
 }
 
@@ -535,7 +558,8 @@ h1 {
 .feature-list .item + .item,
 .feature-list-employee + .feature-list-employee,
 .feature-list-item + .feature-list-item,
-.feature-list-clients + .feature-list-clients {
+.feature-list-clients + .feature-list-clients,
+.contact-nav .item + .item {
   margin-left: 30px;
 }
 
@@ -559,20 +583,116 @@ h1 {
   display: flex;
   width: 206px;
   height: 44px;
-  justify-content: space-around;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.social-network-items a + a {
+  margin-left: 10px;
 }
 
 .footer-contact-item:not(:last-child) {
   margin-bottom: 9px;
 }
 
+/* Инстаграм */
+
+.svg-inst,
+.svg-twitter,
+.svg-facebook,
+.svg-linkedin {
+  fill: #afb1b8;
+}
+
+.svg-inst:hover,
+.svg-twitter:hover,
+.svg-facebook:hover,
+.svg-linkedin:hover {
+  fill: #2196f3;
+}
+
+/* Стилизируем иконки наших клиентов */
+
+.svg-client1,
+.svg-client2,
+.svg-client3,
+.svg-client4,
+.svg-client5,
+.svg-client6 {
+  fill: #afb1b8;
+}
+
+.svg-client1:hover,
+.svg-client2:hover,
+.svg-client3:hover,
+.svg-client4:hover,
+.svg-client5:hover,
+.svg-client6:hover {
+  fill: #2196f3;
+}
+
+
+
 .feature-list-clients {
   display: flex;
   justify-content: center;
+  align-items: center;
 
   width: calc((100%-150px) / 6);
   height: 92px;
-  object-fit: contain;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
+
+  cursor: pointer;
 }
+
+.feature-list-clients:hover {
+  color: #2196f3;
+}
+
+/* Добавляем иконки в футере */
+
+.feature-tittle {
+  margin-bottom: 20px;
+}
+
+.second-footer-flex-container {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  width: 206px; 
+  margin-left: 70px;
+}
+
+.footer-network-items {
+  display: flex;
+}
+
+.second-footer-flex-container ul {
+  margin: 0;
+  padding: 0;
+}
+
+.second-footer-flex-container .feature-tittle {
+  color: #FFFFFF;
+}
+
+.footer-network-items li + li {
+  margin-left: 10px;
+}
+
+.first-footer-flex-container {
+  display: inline-flex;
+}
+
+.logo-contact-container .logo {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.logo-contact-container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
