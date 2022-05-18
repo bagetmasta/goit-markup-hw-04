@@ -17,23 +17,31 @@ body {
   letter-spacing: var(--primary-letter-spacing);
 }
 
+h,
+p {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+}
+
 .hero-tittle {
-  margin-top: 0;
-  margin-bottom: 30px;
+  margin: 0 auto 30px;
 
   letter-spacing: var(--hero-letter-spacing);
   font-weight: 900;
   font-size: 44px;
+  max-width: 696px;
   line-height: 1.36;
   text-align: center;
   text-transform: uppercase;
 }
 
 .hero {
-  padding: 200px 452px;
+  padding: 200px 0px;
+  margin: auto;
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
 
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url('../images/bcg-img.jpg');
@@ -43,13 +51,164 @@ body {
   max-width: 1600px;
 }
 
+/* Добавляем иконки в хедер и стилизируем их */
+
+/* Конверт */
+
+.icon-envelope {
+  fill: #757575;
+}
+
+.icon-envelope:hover {
+  fill: #2196f3;
+}
+
+.svg-envelope {
+  margin-right: 10px;
+}
+
+.contact-nav .contact-link {
+  display: flex;
+  align-items: center;
+}
+
+/* Телефон */
+
+.icon-smartphone {
+  fill: #757575;
+}
+
+.icon-smartphone:hover {
+  fill: #2196f3;
+}
+
+.svg-smartphone {
+  margin-right: 10px;
+}
+
+/* Добавляем иконки в feature-list и стилизируем их */
+
+.icon-antenna,
+.icon-clock,
+.icon-diagram,
+.icon-astronaut {
+  display: flex;
+  width: 270px;
+  height: 120px;
+  background: #f5f4fa;
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+/* Добавляем иконки соц.сетей и стилизируем их */
+
+.social-network-items {
+  display: flex;
+  width: 206px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-bottom: 30px;
+}
+
+.social-network-items li + li {
+  margin-left: 10px;
+}
+
+.link-instagram,
+.link-twitter,
+.link-facebook,
+.link-linkedin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+.link-instagram:hover,
+.link-twitter:hover,
+.link-facebook:hover,
+.link-linkedin:hover,
+.link-instagram:focus,
+.link-twitter:focus,
+.link-facebook:focus,
+.link-linkedin:focus {
+  background-color: #2196f3;
+}
+
+.svg-instagram,
+.svg-twitter,
+.svg-facebook,
+.svg-linkedin {
+  fill: #afb1b8;
+}
+
+.link-instagram:hover .svg-instagram,
+.link-twitter:hover .svg-twitter,
+.link-facebook:hover .svg-facebook,
+.link-linkedin:hover .svg-linkedin,
+.link-instagram:focus .svg-instagram,
+.link-twitter:focus .svg-twitter,
+.link-facebook:focus .svg-facebook,
+.link-linkedin:focus .svg-linkedin {
+  fill: #ffffff;
+}
+
+/* Стилизируем иконки наших клиентов */
+
+.feature-list-clients {
+  width: calc((100%-150px) / 6);
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+
+  cursor: pointer;
+}
+
+.link-clients {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+}
+
+.svg-client1,
+.svg-client2,
+.svg-client3,
+.svg-client4,
+.svg-client5,
+.svg-client6 {
+  fill: #afb1b8;
+}
+
+.feature-list-clients:hover {
+  border: 1px solid #2196f3;
+}
+
+.link-clients:hover .svg-client1,
+.link-clients:hover .svg-client2,
+.link-clients:hover .svg-client3,
+.link-clients:hover .svg-client4,
+.link-clients:hover .svg-client5,
+.link-clients:hover .svg-client6,
+.link-clients:focus .svg-client1,
+.link-clients:focus .svg-client2,
+.link-clients:focus .svg-client3,
+.link-clients:focus .svg-client4,
+.link-clients:focus .svg-client5,
+.link-clients:focus .svg-client6 {
+  fill: #2196f3;
+}
+
 .both-of-sections,
 .section-third,
 .section-fourth {
   padding-top: 94px;
   padding-bottom: 94px;
-  padding-right: 215px;
-  padding-left: 215px;
 }
 
 h2 {
@@ -72,143 +231,15 @@ h2 {
   width: 270px;
 }
 
-/* .feature-list .item::before {
-  display: block;
-  content: '';
-  margin-bottom: 30px;
-  height: 120px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: rgb(245, 244, 250);
-} */
-
-/* Для inline svg */
-
-/* .antenna-test {
-  width: 70px;
-  height: 70px;
-  fill: red;
-}
-
-.antenna-test:hover {
-  fill: teal;
-  background-color: rebeccapurple;
-} */
-
-/* Прошлые файлы bcgi в feature-list */
-
-/* .icon-antenna::before {
-  background-image: url(../images/antenna\ 1.svg);
-}
-
-.icon-clock::before {
-  background-image: url(../images/clock\ 1.svg);
-}
-
-.icon-diagram::before {
-  background-image: url(../images/diagram\ 1.svg);
-}
-
-.icon-astronaut::before {
-  background-image: url(../images/astronaut\ 1.svg);
-} */
-
-/* Тренировка со bcgi */
-
-/* .contact-nav .contact-link.test::before {
-  width: 16px;
-  height: 12px;
-  display: inline-flex;
-  content: '';
-  background-image: url('../images/envelope\ \(hover\).svg');
-  background-repeat: no-repeat;
-  margin-right: 10px;
-  outline: 1px solid red;
-}
-
-.test {
-  color: red;
-}
-
-.contact-nav .contact-link.puck::before {
-  width: 10px;
-  height: 16px;
-  display: inline-flex;
-  content: '';
-  background-image: url('../images/smartphone.svg');
-  margin-right: 10px;
-  outline: 1px solid red;
-} */
-
-/* Добавляем иконки в контакты хедера и стилизируем их*/
-
-.contact-nav .item {
-  display: inline-flex;
-  align-items: center;
-}
-
-/* Телефон */
-
-.icon-smartphone {
-  display: inline-flex;
-  margin-right: 10px;
-}
-
-.icon-smartphone {
-  fill: #757575;
-}
-
-.icon-smartphone:hover {
-  fill: #2196f3;
-}
-
-.svg-smartphone {
-  display: inline-flex;
-  margin-right: 10px;
-}
-
-/* Конверт */
-
-.icon-envelope {
-  display: inline-flex;
-  margin-right: 10px;
-  fill: #757575;
-}
-
-.icon-envelope:hover {
-  fill: #2196f3;
-}
-
-.svg-envelope {
-  display: inline-flex;
-  margin-right: 10px;
-}
-
-/* Добавляем иконки в feature-list и стилизируем их */
-
-.icon-antenna,
-.icon-clock,
-.icon-diagram,
-.icon-astronaut {
-  display: flex;
-  width: 270px;
-  height: 120px;
-  background: #f5f4fa;
-  border-radius: 4px;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 30px;
-}
-
-.wrap-image {
-  margin-bottom: 20px;
+.projects-description {
+  padding: 24px 24px;
+  border-bottom: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
 }
 
 .project-tittle {
-  margin-right: 24px;
-  margin-left: 24px;
   margin-bottom: 4px;
-
   font-size: 18px;
   line-height: 2;
   letter-spacing: var(--hero-letter-spacing);
@@ -216,10 +247,7 @@ h2 {
 
 .project-text {
   margin-top: 0;
-  margin-right: 24px;
-  margin-left: 24px;
-  margin-bottom: 20px;
-
+  margin-bottom: 0px;
   color: var(--secondary-text-color);
   font-size: 16px;
   line-height: 1.88;
@@ -227,7 +255,7 @@ h2 {
 
 .feature-tittle {
   margin-top: 0px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 
   font-size: 14px;
   line-height: 1.14;
@@ -244,24 +272,21 @@ h2 {
   text-decoration: none;
 }
 
-/* Стилизируем иконки наших клиентов */
-
-/* Задал контейнеру 1170, как по макету, а не 1200 */
+.container > .logo {
+  display: inline-block;
+  margin-bottom: 20px;
+}
 
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 1170px;
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 .page-header {
-  padding-right: 215px;
-  padding-left: 215px;
-  border: 1px solid #ececec;
-}
-
-.page-header.portfolio {
-  margin-bottom: 94px;
+  border-bottom: 1px solid #ececec;
 }
 
 .accent {
@@ -293,6 +318,11 @@ h2 {
   display: inline-block;
 }
 
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 .feature-text,
 .footer-contact.list {
   line-height: 1.71;
@@ -319,17 +349,18 @@ address {
   text-align: center;
 }
 
-.employee-img {
-  margin-bottom: 30px;
-}
-
 .employee-name {
   margin-top: 0;
   margin-bottom: 10px;
 }
 
+.employee-img {
+  display: block;
+}
+
 .section-first {
-  margin-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .employee-name {
@@ -341,11 +372,17 @@ address {
 
 .employee-text {
   margin-top: 0;
-  margin-bottom: 16px;
 
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
+}
+
+.profession-employee {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 .site-nav .nav-link:hover,
@@ -362,11 +399,10 @@ address {
   align-items: center;
 }
 
-.container-portfolio {
-  margin-bottom: 94px;
+.portfolio-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
-
-/* Может объединть вверхний и нижний селекторы? */
 
 .main-nav {
   display: flex;
@@ -380,8 +416,18 @@ address {
   line-height: 1.14;
 }
 
-.hide {
-  display: none;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .site-nav {
@@ -389,7 +435,8 @@ address {
   margin-left: 93px;
 }
 
-.site-nav .item + .item {
+.site-nav .item + .item,
+.contact-nav .item + .item {
   margin-left: 50px;
 }
 
@@ -401,32 +448,8 @@ address {
 
 .contact-nav {
   display: flex;
-  align-items: center;
   margin-left: auto;
 }
-
-/* .site-nav .nav-link,
-.contact-nav .contact-link {
-    display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    outline: 1px solid red;
-}
-
-.site-nav .item + .item,
-.contact-nav .item + .item {
-    margin-left: 40px;
-} */
-
-/* Ниже такие же варианты верхнего селектора */
-
-/* .site-nav .item:last-child {
-    margin-right: 0;
-} */
-
-/* .site-nav .item:not(:last-child) {
-    margin-right: 50px;
-} */
 
 .site-nav .nav-link.current {
   color: var(--accent-color);
@@ -456,6 +479,7 @@ address {
 .secondary-button {
   display: block;
   border-radius: 4px;
+  padding: 6px 22px;
 
   color: var(--primary-text-color);
   background-color: #f5f4fa;
@@ -499,6 +523,10 @@ address {
   color: #ffffff;
 }
 
+.section-second {
+  padding-bottom: 94px;
+}
+
 .section-third {
   background-color: #f5f4fa;
 }
@@ -527,10 +555,6 @@ address {
   margin-right: 30px;
   margin-bottom: 30px;
 
-  border-bottom: 1px solid #eeeeee;
-  border-right: 1px solid #eeeeee;
-  border-left: 1px solid #eeeeee;
-
   cursor: pointer;
 }
 
@@ -550,7 +574,7 @@ address {
 .list-button {
   display: flex;
   justify-content: center;
-  margin-bottom: 34px;
+  margin-bottom: 50px;
 }
 
 .list-button .item + .item {
@@ -568,8 +592,7 @@ h1 {
 .feature-list .item + .item,
 .feature-list-employee + .feature-list-employee,
 .feature-list-item + .feature-list-item,
-.feature-list-clients + .feature-list-clients,
-.contact-nav .item + .item {
+.feature-list-clients + .feature-list-clients {
   margin-left: 30px;
 }
 
@@ -577,100 +600,42 @@ h1 {
   width: calc((100% - 60px) / 3);
 }
 
+.services-img {
+  display: block;
+}
+
 .feature-list-employee {
   width: calc((100% - 90px) / 4);
-  height: 428px;
   background-color: #ffffff;
 
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%),
+    0px 2px 1px rgb(0 0 0 / 20%);
   border-radius: 0px 0px 4px 4px;
-}
-
-/* Добавляем иконки соц.сетей и стилизируем их */
-
-.social-network-items {
-  display: flex;
-  width: 206px;
-  height: 44px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.social-network-items a + a {
-  margin-left: 10px;
 }
 
 .footer-contact-item:not(:last-child) {
   margin-bottom: 9px;
 }
 
-/* Инстаграм */
-
-.svg-inst,
-.svg-twitter,
-.svg-facebook,
-.svg-linkedin {
-  fill: #afb1b8;
-}
-
-.svg-inst:hover,
-.svg-twitter:hover,
-.svg-facebook:hover,
-.svg-linkedin:hover {
-  fill: #2196f3;
-}
-
-/* Стилизируем иконки наших клиентов */
-
-.svg-client1,
-.svg-client2,
-.svg-client3,
-.svg-client4,
-.svg-client5,
-.svg-client6 {
-  fill: #afb1b8;
-}
-
-.svg-client1:hover,
-.svg-client2:hover,
-.svg-client3:hover,
-.svg-client4:hover,
-.svg-client5:hover,
-.svg-client6:hover {
-  fill: #2196f3;
-}
-
-.feature-list-clients {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  width: calc((100%-150px) / 6);
-  height: 92px;
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
-
-  cursor: pointer;
-}
-
-.feature-list-clients:hover {
-  color: #2196f3;
-}
-
-/* Добавляем иконки в футере */
-
-.feature-tittle {
-  margin-bottom: 20px;
+.first-footer-flex-container {
+  display: inline-flex;
 }
 
 .second-footer-flex-container {
   display: inline-flex;
   flex-direction: column;
   align-items: flex-start;
-
   width: 206px;
   margin-left: 70px;
+}
+
+.second-footer-flex-container .feature-tittle {
+  color: #ffffff;
+}
+
+.second-footer-flex-container ul {
+  margin: 0;
+  padding: 0;
 }
 
 .footer-network-items {
@@ -681,25 +646,13 @@ h1 {
   margin-left: 10px;
 }
 
-.second-footer-flex-container ul {
-  margin: 0;
-  padding: 0;
-}
+/* Добавляем иконки в футере */
 
-.second-footer-flex-container .feature-tittle {
-  color: #ffffff;
-}
-
-.first-footer-flex-container {
-  display: inline-flex;
-}
-
-.logo-contact-container .logo {
-  display: flex;
+.first-footer-flex-container .logo {
+  display: block;
   margin-bottom: 20px;
 }
 
-.logo-contact-container {
-  padding-top: 60px;
-  padding-bottom: 60px;
+.footer-network-items a {
+  background-color: rgba(255, 255, 255, 0.1);
 }
