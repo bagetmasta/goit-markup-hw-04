@@ -106,9 +106,7 @@ ul {
 
 .social-network-items {
   display: flex;
-  width: 206px;
-  margin-right: auto;
-  margin-left: auto;
+  justify-content: center;
 }
 
 .social-network-items li + li {
@@ -161,8 +159,6 @@ ul {
 .feature-list-clients {
   width: calc((100%-150px) / 6);
   height: 92px;
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
 
   cursor: pointer;
 }
@@ -173,6 +169,12 @@ ul {
   align-items: center;
   width: 170px;
   height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.feature-list-clients:hover .link-clients {
+  border: 1px solid #2196f3;
 }
 
 .svg-client1,
@@ -182,10 +184,6 @@ ul {
 .svg-client5,
 .svg-client6 {
   fill: #afb1b8;
-}
-
-.feature-list-clients:hover {
-  border: 1px solid #2196f3;
 }
 
 .link-clients:hover .svg-client1,
@@ -556,6 +554,10 @@ address {
   margin-bottom: 30px;
 
   cursor: pointer;
+}
+
+.wrap-element .footer-img {
+  display: block;
 }
 
 .link-wrap-element:hover,
